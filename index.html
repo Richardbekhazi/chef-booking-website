@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef Booking Service</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Book a Chef for Your Home</h1>
+        <p>Enjoy gourmet meals prepared by our professional chefs in your own kitchen.</p>
+    </header>
+    <section id="booking">
+        <h2>Book a Chef</h2>
+        <!--
+          The form uses a mailto action so that submissions open the user’s email
+          client. Replace the example email address with your own email
+          to receive booking requests. The form data will be formatted as
+          plain text in the email body.
+        -->
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required />
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" />
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="Date" required />
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="Time" required />
+
+            <label for="address">Address</label>
+            <textarea id="address" name="Address" rows="2" required></textarea>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="Notes" rows="4"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Chef Booking Service</p>
+    </footer>
+</body>
+</html>
